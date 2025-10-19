@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IMS ENGINEERING COLLEGE</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 25% 75%;   /* Left 25%, Right 75% */
+      grid-template-rows: 25% 10% 65%; /* Top 25%, Middle 10%, Bottom 65% */
+    }
+
+    /* Left column */
+    .logo {
+      grid-column: 1; grid-row: 1;
+      border: 1px solid black;
+      display: flex; justify-content: center; align-items: center;
+    }
+    .home {
+      grid-column: 1; grid-row: 2;
+      border: 1px solid black;
+      display: flex; justify-content: center; align-items: center;
+    }
+    .courses {
+      grid-column: 1; grid-row: 3;
+      border: 1px solid black;
+      display: flex; justify-content: center; align-items: center;
+    }
+
+    /* Right column */
+    .name {
+      grid-column: 2; grid-row: 1;
+      border: 1px solid black;
+      display: flex; justify-content: center; align-items: center;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .menu {
+      grid-column: 2; grid-row: 2;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid black;
+    }
+    .menu div {
+      border: 1px solid black;
+      display: flex; justify-content: center; align-items: center;
+    }
+    .home1 {
+      grid-column: 2; grid-row: 3;
+      border: 1px solid black;
+      display: flex; justify-content: center; align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Left column -->
+  <div class="logo">LOGO</div>
+  <div class="home">HOME</div>
+  <div class="courses">COURSES</div>
+
+  <!-- Right column -->
+  <div class="name">IMS ENGINEERING COLLEGE</div>
+  <div class="menu">
+    <div>Login</div>
+    <div>Registration</div>
+    <div>Catalogue</div>
+    <div>Cart</div>
+  </div>
+  <div class="home1">Main Content Area</div>
+  <canvas></canvas>
+</body>
+</html>

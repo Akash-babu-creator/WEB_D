@@ -1,0 +1,21 @@
+h2 {
+    color: rgb(235, 121, 148);
+}
+
+script {
+    background-color: rgb(73, 120, 165);
+    color: black;
+}
+
+body {
+    background-color: rgb(82, 96, 157);
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000033;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+         /* class selector */
+        .red{
+            background-color: red;
+            color: rgb(80, 56, 116);
+        }
+        /* Id slector */
+        #green{
+            background-color: green;
+        }
+        /* child selctor  */
+        /* div > p{
+            color: blue;
+            background-color: rgb(241, 114, 176);
+        } */
+        /* div > article > p{
+            color: rgb(99, 188, 135);
+            background-color: aqua;
+        } */
+        /* discendent slector */
+        div p{
+            color: rgb(30, 77, 121);
+        }
+        /* Univeral selector */
+        *{
+            margin: 0;
+            padding: 0;  
+        }
+        /* pseudo slector  */
+        a:visited{
+            color: rgb(177, 55, 76);
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+            color: blue;
+        }
+        a:hover{
+            background-color: brown;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body style="background-color: rgb(208, 208, 203);">
+    <div class="red">
+        I am a div
+         <p>
+            I  am a para inside div.
+        </p>
+    </div>
+    <div class="red">
+        I am a div
+         <main>
+              <p> I am a para inside div.</p>
+              <p>i am second para inside dive</p>
+         </main>
+    </div>
+    <div class="red">
+        I am a div
+         <article>
+            <P>I  am a para inside div inside an article.</P>
+         </article>
+    </div>
+    <div id="green">
+        I am another div
+       
+    </div>
+    <p class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <div>
+        <a href="https://www.google.com/">goto google</a>
+        <a href="https://www.youtube.com/">goto youtube</a>
+    </div>
+    <div class="one">
+        <p>I am one</p>
+        <p>I am second</p>
+        <p>I am third</p>
+        <p>I am four</p>
+    </div>
+    
+</body>
+</html>
