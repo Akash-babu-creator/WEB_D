@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Quiz - Quiz Page</title>
+   <link rel="stylesheet" href="quiz.css">
+  </head>
+  <body>
+    <header>
+      <h1>AI Quiz</h1>
+      <button class="btn" onclick="window.location.href='index.html'">
+        ← Back
+      </button>
+    </header>
+
+    <div class="quiz-container">
+      <div id="quiz">
+        <div class="question" id="question">Loading question...</div>
+        <ul class="options" id="options"></ul>
+        <button class="btn" id="nextBtn">Next</button>
+        <div class="score" id="score"></div>
+      </div>
+    </div>
+
+    <script>
+      // Temporary static quiz (pretend AI generated)
+      const quizData = [
+        {
+          question: "1. Which of the following best defines a nanomaterial?",
+          options: [
+            "Material with grain size above 100nm",
+            "Material with features below 100nm",
+            "A type of crystalline solid",
+            "Material that is non-conductive",
+          ],
+          correct: 1,
+        },
+        {
+          question: "2. Which orbital combination forms a sigma bond?",
+          options: [
+            "s-s or s-p overlapping along the axis",
+            "p-p sidewise overlapping",
+            "d-d lateral overlap",
+            "All of the above",
+          ],
+          correct: 0,
+        },
+        {
+          question: "3. Which statement about fullerenes is true?",
+          options: [
+            "They are amorphous carbon forms",
+            "They have cage-like structures of carbon atoms",
+            "They are only formed in liquids",
+            "They are unstable compounds",
+          ],
+          correct: 1,
+        },
+      ];
+
+      let current = 0;
+      let score = 0;
+
+      const questionEl = document.getElementById("question");
+      const optionsEl = document.getElementById("options");
+      const nextBtn = document.getElementById("nextBtn");
+      const scoreEl = document.getElementById("score");
+
+      function loadQuiz() {
+        const q = quizData[current];
+        questionEl.textContent = q.question;
+        optionsEl.innerHTML = "";
+        q.options.forEach((opt, i) => {
+          const li = document.createElement("li");
+          li.textContent = opt;
+          li.addEventListener("click", () => selectOption(i));
+          optionsEl.appendChild(li);
+        });
+      }
+
+      function selectOption(index) {
+        const q = quizData[current];
+        const allOptions = document.querySelectorAll("#options li");
+        allOptions.forEach((opt, i) => {
+          opt.style.pointerEvents = "none";
+          if (i === q.correct) opt.style.backgroundColor = "#238636";
+          else if (i === index) opt.style.backgroundColor = "#da3633";
+        });
+        if (index === q.correct) score++;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        current++;
+        if (current < quizData.length) {
+          loadQuiz();
+        } else {
+          questionEl.textContent = "Quiz Complete!";
+          optionsEl.innerHTML = "";
+          nextBtn.style.display = "none";
+          scoreEl.textContent = `Your Score: ${score} / ${quizData.length}`;
+        }
+      });
+
+      loadQuiz();
+    </script>
+  </body>
+</html>
