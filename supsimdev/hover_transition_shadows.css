@@ -1,0 +1,58 @@
+ .subscribe-button{
+        background: rgb(200, 1, 1);
+        color:white;
+        border: none;
+        height: 34px;
+        width:106px;
+        border-radius:2px;
+        cursor:pointer;
+        /* cursor:progress' */
+        margin-right: 10px;
+        transition: opacity 0.15s;
+    }
+    .subscribe-button:hover{
+        opacity: 0.8;         /*it tells us how see through an html element is. it's value is between 0 and 1*/
+    }
+    .subscribe-button:active{
+        opacity: 0.5;
+    }
+    .join_button{
+        background-color: white;
+        border: solid;
+        border-color: rgb(54, 114, 216);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(51, 107, 190);
+        height: 34px;
+        width: 58px;
+        border-radius : 2px;
+        cursor: pointer;
+        /* margin-right: 10px; */
+        transition: background-color 0.15s,color 0.15s;
+
+    }
+    .join_button:hover{
+        background-color: rgb(54,114,216);
+        color: white;
+    }
+    .join_button:active{
+        opacity :0.7;
+    }
+    .tweet-button{
+        background-color: rgb(2, 158, 255);
+        color: white;
+        border: none;
+        height: 34px;
+        width: 74px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size:15px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition:box-shadow 0.15s;
+        
+
+    }
+    .tweet-button:hover{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+    }
