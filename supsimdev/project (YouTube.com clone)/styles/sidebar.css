@@ -1,0 +1,14 @@
+.sidebar{
+    background-color: white;
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    width: 72px;
+}
+.Home-icon{
+    width: 20px;
+}
+.explore-icon{
+    width: 20px;
+}

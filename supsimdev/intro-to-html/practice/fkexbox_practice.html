@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        flexbox practice
+    </title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            padding-bottom: 3000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;
+            margin-bottom: 50px;
+            ">
+        <div style="background-color: lightpink;
+            width: 200px;">200px</div>
+        <div style="background-color: lightblue;
+            width: 75px;">75px</div>
+    </div>
+
+
+    <div style="display: flex;
+            margin-bottom: 50px;
+            ">
+        <div style="background-color: lightpink;
+            width: 50px;">item1</div>
+        <div style="background-color: lightblue;
+            flex: 1;">item2</div>
+        <div style="background-color: lightpink;
+            width: 75px;">
+            item3
+        </div>
+    </div>
+    <div style="display: flex;
+            height: 50px;
+            border: solid;
+            border-width: 1px;
+            border-color: gray;
+            justify-content: space-between;
+            align-items: center;">
+        <div style="background-color: lightpink;
+            ">item1</div>
+        <div style="background-color: lightblue;
+            ">item2</div>
+    </div>
+    <div style="width: 500px;
+    height: 150px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow:  1px 1px 10px rgba(0,0,0,0.25); 
+    ">
+        <div style="display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top:12px;
+            padding-left: 12px;
+            padding-right: 12px;
+            ">
+            <div style="font-size: 20px;">
+                Home
+            </div>
+            <button style="background-color: rgb(61, 104, 213);
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            padding-left:18px;
+            padding-right:18px;
+            padding-top:6px;
+            padding-bottom:6px;
+            border-radius: 20px;
+            border: none;
+            ">
+                14
+            </button>
+        </div>
+        <div style="display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top:12px;
+            padding-left: 12px;
+            padding-right: 12px;
+            ">
+            <div style="font-size: 20px;">
+                Notifications
+            </div>
+            <button style="background-color: rgb(61, 104, 213);
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            padding-left:18px;
+            padding-right:18px;
+            padding-top:6px;
+            padding-bottom:6px;
+            border-radius: 20px;
+            border: none;
+            ">
+                3
+            </button>
+        </div>
+        <div style="display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top:12px;
+            padding-left: 12px;
+            padding-right: 12px;
+            ">
+            <div style="font-size: 20px;">
+                Messages
+            </div>
+            <button style="background-color: rgb(61, 104, 213);
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            padding-left:18px;
+            padding-right:18px;
+            padding-top:6px;
+            padding-bottom:6px;
+            border-radius: 20px;
+            border: none;
+            ">
+                5
+            </button>
+        </div>
+    </div>
+
+    <div style="display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(139, 80, 174);
+    height: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 50px;
+    
+    ">
+        <div style="font-weight: bold;
+        color: white;
+        
+        ">
+            Home
+        </div>
+        <div>
+            <input type="text" placeholder="Search" style="padding-top:7px;
+            padding-bottom:7px;
+            padding-left: 14px;
+            padding-right: 400px;
+            border-radius: 20px;
+            border: none;
+
+            ">
+        </div>
+        <div>
+            <button style="padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 12px;
+            padding-right: 12px;
+            color: white;
+            background-color:rgb(139, 80, 174) ;
+            border-width: 1px;
+            border-color: white;
+            border-style: solid;
+            ">
+                Download
+            </button>
+        </div>
+    </div>
+
+    <div style="margin-top: 60px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 400px;
+    height: 500px;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    margin-top: 5px;
+    ">
+        <div style="display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ">
+            <div style="display: flex;
+            flex-direction: row;">
+                <div>
+                    <img style="width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                object-fit: cover;
+                object-position: center;
+                " src="download.jpg" alt="">
+                </div>
+                <div style="display: flex;
+                flex-direction: column;
+                margin-left: 12px;">
+                    <div style="font-weight: bold;
+                    padding-top: 2px;
+                    margin-bottom: 3px;">
+                        oliver
+                    </div>
+                    <div style="
+                    color: rgb(174, 173, 173);
+                    margin-bottom: 3px;
+                    ">
+                        the cat
+                    </div>
+                    <div style="
+                    color: rgb(174, 173, 173);
+                    ">
+                        Popular
+                    </div>
+                </div>
+            </div>    
+            <div>
+                <button style="background-color: rgb(59, 102, 220);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 10px;
+            padding-bottom:10px;
+            ">
+                    Follow
+                </button>
+            </div>
+        </div>
+        <div style="display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        ">
+            <div style="display: flex;
+            flex-direction: row;">
+                <div>
+                    <img style="width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                object-fit: cover;
+                object-position: center;
+                " src="download.jpg" alt="">
+                </div>
+                <div style="display: flex;
+                flex-direction: column;
+                margin-left: 12px;">
+                    <div style="font-weight: bold;
+                    padding-top: 2px;
+                    margin-bottom: 3px;">
+                        oliver
+                    </div>
+                    <div style="
+                    color: rgb(174, 173, 173);
+                    margin-bottom: 3px;
+                    ">
+                        the cat
+                    </div>
+                    <div style="
+                    color: rgb(174, 173, 173);
+                    ">
+                        Popular
+                    </div>
+                </div>
+            </div>    
+            <div>
+                <button style="background-color: rgb(59, 102, 220);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 10px;
+            padding-bottom:10px;
+            ">
+                    Follow
+                </button>
+            </div>
+        </div>
+        <div style="display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        ">
+            <div style="display: flex;
+            flex-direction: row;">
+                <div>
+                    <img style="width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                object-fit: cover;
+                object-position: center;
+                " src="download.jpg" alt="">
+                </div>
+                <div style="display: flex;
+                flex-direction: column;
+                margin-left: 12px;">
+                    <div style="font-weight: bold;
+                    padding-top: 2px;
+                    margin-bottom: 3px;">
+                        oliver
+                    </div>
+                    <div style="
+                    color: rgb(174, 173, 173);
+                    margin-bottom: 3px;
+                    ">
+                        the cat
+                    </div>
+                    <div style="
+                    color: rgb(174, 173, 173);
+                    ">
+                        Popular
+                    </div>
+                </div>
+            </div>    
+            <div>
+                <button style="background-color: rgb(59, 102, 220);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding-left: 14px;
+            padding-right: 14px;
+            padding-top: 10px;
+            padding-bottom:10px;
+            ">
+                    Follow
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
