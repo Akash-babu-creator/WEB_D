@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        position fixed challenge exercised
+    </title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position:fixed;
+        background-color: green;
+        width: 100px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        ">right sidebar
+    </div>
+    <div style="position: fixed;
+        background-color: rgba(0, 0, 0,0.5);
+        top: 0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        ">
+        <div style="background-color: white;
+        width: 820px;
+        height: 160px;
+        border-radius: 5px;
+        ">
+            <div style="font-weight: bold;
+            padding-left: 15px;
+            padding-top: 18px;
+            font-size: 40px;
+            margin-bottom: 18px;
+            ">
+                Modal Title
+            </div>
+            <div style="padding-left: 15px;
+            font-size: 20px;
+            margin-bottom: 15px;
+            ">
+                This is a modal
+            </div>
+            <div style="padding-left: 15px;">
+                <button>close</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
