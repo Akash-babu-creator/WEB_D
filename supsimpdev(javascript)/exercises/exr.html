@@ -33,8 +33,49 @@
     <button style=" background-color: yellow;" onclick=" alert('Added');">
       Add to cart
     </button>
-    <button style=" background-color: orange;"
-    onclick=" 
+    <button onclick=" addtoCart+=4;
+    console.log(`Add to Cart: ${addtoCart}`);
+    ">+4</button>
+    <button onclick=" addtoCart+=5;
+    console.log(`Add to Cart: ${addtoCart}`);
+    "> +5</button>
+
+    <button onclick="
+    if(addtoCart>0){
+      addtoCart--;
+      console.log(`Add to Cart: ${addtoCart}`);
+    }
+    else{
+    console.log(`Cart is empty`)
+    }
+    ">
+      Remove from cart
+    </button>
+
+    <button onclick="
+    if(addtoCart>=2){
+      addtoCart-=2;
+      console.log(`Add to Cart: ${addtoCart}`);
+    }
+    else {
+    console.log(`There is only 1 product in cart`)
+    }
+    ">
+      -2
+    </button>
+    <button onclick="
+    if(addtoCart>=3){
+      addtoCart-=3;
+      console.log(`Add to Cart: ${addtoCart}`);
+    }
+    else{
+      console.log(`Ther is less than 3 items in cart`);
+    }
+    ">
+      -3
+    </button>
+
+    <button style=" background-color: orange;" onclick=" 
     alert('Purchesed');
     console.log('loading');
     ">
@@ -43,7 +84,9 @@
   </div>
 </body>
 <script>
+  let addtoCart = 0;
   console.log('Welcome!');
+  console.log(`Add to cart: ${addtoCart}`);
 </script>
 
 </html>
